@@ -9,6 +9,7 @@
     <script defer src="script.js"></script>
   </head>
   <body>
+    <!-- Desktop Navbar -->
     <nav id="desktop-nav">
       <div class="logo">Nitesh Nagar</div>
       <div>
@@ -20,6 +21,8 @@
         </ul>
       </div>
     </nav>
+
+    <!-- Mobile Navbar -->
     <nav id="hamburger-nav">
       <div class="logo">Nitesh Nagar</div>
       <div class="hamburger-menu">
@@ -38,5 +41,99 @@
         </div>
       </div>
     </nav>
+
+    <!-- Hero Section -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/profile-pic.jpg"
+          alt="Nitesh Nagar profile picture"
+          class="profile-pic"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello I'm</p>
+        <h1 class="title">Nitesh Nagar</h1>
+        <p class="section__text__p2">Full Stack Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/nitesh-nagar-resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button
+            class="btn btn-color-1"
+            onclick="location.href = './#contact'"
+          >
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="Linkedin profile"
+            class="icon"
+            onclick="
+              location.href = 'https://www.linkedin.com/in/theniteshnagar/'
+            "
+          />
+          <img
+            src="./assets/github.png"
+            alt="Github profile"
+            class="icon"
+            onclick="location.href = 'https://github.com/TheNiteshNagar'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.webp"
+            alt="About picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Full Stack Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelor of Computer Applications</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+              animi maiores magnam sit. Cupiditate dicta aliquid inventore atque
+              alias itaque odio vel quibusdam. Labore minima ducimus
+              perspiciatis accusamus in fugit laboriosam voluptatum optio dolore
+              ipsa. Assumenda, optio, error tempora atque harum accusantium
+              maxime ab id, sunt delectus fugit iusto eos!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="go down arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
   </body>
 </html>
