@@ -5,29 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nitesh Nagar</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
     <script defer src="script.js"></script>
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">
-        Nitesh
-      </div>
-      <div class="nav-links">
-        <ul>
-          <li><a href="#">Home</a></li>
+      <div class="logo">Nitesh Nagar</div>
+      <div>
+        <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-
     </nav>
-
-      <div id="home"></div>
-      <div id="about"></div>
-      <div id="experience"></div>
-      <div id="projects"></div>
-      <div id="contact"></div>
+    <nav id="hamburger-nav">
+      <div class="logo">Nitesh Nagar</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <ul>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </body>
 </html>
